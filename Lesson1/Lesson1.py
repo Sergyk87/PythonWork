@@ -35,10 +35,10 @@
 # iter %= 5 # iter = iter % 5
 # iter **= 5 # iter = iter ** 5
 
-# a = "qwerty" #строка а
-# print(a[0])  #вывод на печать элемента строки
-# for i in a:
-#   print(i) #вывод всех элементов по очереди
+a = "qwerty" #строка а
+print(a[0])  #вывод на печать элемента строки
+for i in a:
+  print(i) #вывод всех элементов по очереди
 
 # text = 'СъЕШЬ ещё этих МяГкИх французских булок'
 # print(len(text))  #определяет длинну строки
@@ -56,15 +56,15 @@
 
 # Найти большее число из двух
 
-a = int(input('Число А ='))
+# a = int(input('Число А ='))
 
-b = int(input('Число Б ='))
+# b = int(input('Число Б ='))
 
-print(a == b)
+# print(a == b)
 
-if a > b:
-    print(f"большее число a = {a}")
-elif a == b:
-    print("a == b")
-else:
-    print(f"большее число b = {b}")
+# if a > b:
+#     print(f"большее число a = {a}")
+# elif a == b:
+#     print("a == b")
+# else:
+#     print(f"большее число b = {b}")
