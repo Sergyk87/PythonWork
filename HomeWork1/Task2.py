@@ -14,3 +14,10 @@ if s % 6 == 0:
     print(f"{s} -> {int(a)} {int(4 * a)} {int(a)}")
 else:
     print("Число не кратно 6!")
+
+
+# n = int(input())
+# n1 = n // 6
+# n2 = n // 6
+# n3 = (n // 6) * 4
+# print(n1, n3, n2)

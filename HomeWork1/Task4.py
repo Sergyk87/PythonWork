@@ -13,3 +13,11 @@ if k % m == 0 and k < m * n or k % n == 0 and k < m * n or k == n or k == m:
     print(f"{n} {m} {k} -> yes")
 else:
     print(f"{n} {m} {k} -> no")
+
+# a = int(input())
+# b = int(input())
+# c = int(input())
+# if c <= b * a and (c % a == 0 or c % b == 0):
+# print('yes')
+# else:
+# print('no')
