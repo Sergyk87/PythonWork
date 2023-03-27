@@ -11,22 +11,17 @@
 #     -> 5
 
 from random import randint
-a = []
 n = int(input("Введите количество элементов: "))
-x = int(input("Задайте число: "))
+list = list()
 for i in range(n):
-    a.append(randint(1,10))
-print(a)
-j = 0
-find_res = 0
-flag = True
-while find_res == 0:
-    i = 0
-    while i<n and flag:
-        if abs(x-a[i])==j:
-            find_res = a[i]
-            flag = False
-        i+=1
-    j+=1
+    list.append(randint(1,10))
+print(list)
+x = int(input("Задайте число: "))
+blig = 0
+y = 0
+for i in list:
+    y = abs(x - i)
+    if blig < y:
+        blig == i
+print(blig)
 
-print(f'res = {find_res}')
