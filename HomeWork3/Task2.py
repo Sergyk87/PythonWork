@@ -22,3 +22,5 @@ for i in list:
     if abs(x - i) < abs(x - number) and abs(x - i) != 0:
         number = i
 print(f"-> {number}")
+
+
