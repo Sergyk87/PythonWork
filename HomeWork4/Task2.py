@@ -10,17 +10,21 @@ n = int(input('введите количество кустов: '))
 a = list()
 for i in range(n):
     a.append(randint(1, 10))
-print(a)
-sum_max = a[-1] + a[0] + a[1]      # если начинаем с первого куста
-sum_max1 = a[-2] + a[-1] + a[0]    # сли начинаем с последнего куста
-if sum_max1 > sum_max:
-    sum_max = sum_max1
-for i in range(len(a[1:])):
-    sum = a[i] + a[i - 1] + a[i + 1]
+print(*a)
+# sum_max = a[-1] + a[0] + a[1]      # если начинаем с первого куста
+# sum_max1 = a[-2] + a[-1] + a[0]    # сли начинаем с последнего куста
+# if sum_max1 > sum_max:
+#     sum_max = sum_max1
+# for i in range(len(a[1:])):
+#     sum = a[i] + a[i - 1] + a[i + 1]
+#     if sum > sum_max:
+#         sum_max = sum
+# print(f'максимальное число ягод за один заход: {sum_max}')
+
+sum_max = 0
+for i in range(len(a)):
+    sum = (a[i-2]) + a[i-1] + a[i]
     if sum > sum_max:
         sum_max = sum
 print(f'максимальное число ягод за один заход: {sum_max}')
-
-
-
 

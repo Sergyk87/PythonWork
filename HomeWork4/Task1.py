@@ -3,13 +3,13 @@
 # Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
 
 
-
+from random import randint as RD
 n = int(input('Введите количество элементов первого набора чисел: '))
-list1 = list()
-for i in range(n):
-    i = int(input('введите целые числа через enter: '))  # по заданию элементы вводит пользователь
-    list1.append(i)
-
+# list1 = list()
+# for i in range(n):
+#     i = int(input('введите целые числа через enter: '))  # по заданию элементы вводит пользователь
+#     list1.append(i)
+list1 = [RD(0, 10) for _ in range(n)]  #заполнение рандомно
 m = int(input('Введите количество элементов второго набора чисел: '))
 list2 = list()
 for i in range(m):
@@ -17,10 +17,13 @@ for i in range(m):
     list2.append(i)
 
 set1 = set(i for i in list1)
-set2 = set(i for i in list2)
+set2 = set(list2)                   #перевод списка во множество
 
 print(f'{list1}\n{list2}\n{set1}\n{set2}')
-print(*set1.intersection(set2))
 
+print(*set1.intersection(set2))  # аналог 26 и 27 строки
+
+mult = set1 & set2
+print(*mult)
 
 
