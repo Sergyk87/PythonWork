@@ -18,3 +18,7 @@ for i in range(n):
 
 print(rezult_list)
 
+# list2 = [i for i in range(len(list1)) if n_min <= list1[i] <= n_max]
+# print(list2)
+
+# print([i for i,j in enumerate(list1) if n_min <= j <= n_max])
