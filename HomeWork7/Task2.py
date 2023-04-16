@@ -17,13 +17,24 @@
 
 
 
-def print_operation_table(operation, num_rows=6, num_columns=6):
-    for i in range(1, num_rows+1):
-        print()
-        for j in range(1, num_columns+1):
-            print(operation(i,j), end=' ')
+# def print_operation_table(operation, num_rows=6, num_columns=6):
+#     for i in range(1, num_rows+1):
+#         print()
+#         for j in range(1, num_columns+1):
+#             print(operation(i,j), end=' ')
 
             
-print_operation_table(lambda x, y: x * y)
+# print_operation_table(lambda x, y: x * y)
+
+def print_operation_table(operation, num_rows=6, num_columns=6):
+    for i in range(1, num_rows + 1):
+        for j in range(1, num_columns + 1):
+            print(str(operation(i, j)).rjust(4), end="") #выравнивание по правому краю(ljust - по левому)
+        print(end="\n")
+
+
+print_operation_table(lambda x, y: x * y, 10, 10)
+
+# s.rjust(width, fillchar = "" ) делает длину строки не меньше width, по необходимости заполняя первые символы символом fillchar
             
 

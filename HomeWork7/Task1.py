@@ -27,3 +27,15 @@ if len(count_glas1) == 1:                                 #если во мно�
 else:
     print('Пам парам')
 
+# Ещё подсократил решение:
+
+# vowels = 'аеёиоуыэюя'
+# words = 'пара-ра-рам рам-пам-папам па-ра-па-дам'.split()
+# entries = []
+
+# for word in words:
+#     entries.append(0)
+# for char in vowels:
+#     entries.append(entries.pop() + word.count(char))
+
+# print("-> Парам пам-пам") if len(set(entries)) == 1 else print("-> Пам парам")
